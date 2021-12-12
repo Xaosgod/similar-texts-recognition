@@ -10,7 +10,7 @@ pip install difflib
 normalized1 = text1.lower()
 normalized2 = text2.lower()
 ```
--Запускае функцию сравнения
+- Запуск функции сравнения
 ```
 matcher = difflib.SequenceMatcher(None, normalized1, normalized2)
 ```
@@ -25,7 +25,7 @@ pip install uvicorn fastapi pydantic
 from fastapi import FastAPI, File, UploadFile
 app = FastAPI()
 ```
-- Проверим работу приложение для этого открывает терминал и прописываепм команду:
+- Проверим работу приложения. Для этого открываем терминал и прописываем команду:
 ```
 uvicorn <имя_вашего_файла>:app
 
@@ -41,7 +41,7 @@ ifconfig
 uvicorn <имя_вашего_файла>:app --host <ваше_IP>
 
 ```
-- Добавляем эндпоинт POST, на входе подается 2 текста
+- Добавляем эндпоинт POST, на входе подаем 2 текста
 ```
 @app.post("/similar-recognition")
 async def create_upload_files(files: List[UploadFile] = File(...)):
