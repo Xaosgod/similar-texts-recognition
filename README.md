@@ -1,4 +1,4 @@
-# Веб-сервис image-text-recognition на базе OCR фреймворка easyocr
+# Веб-сервис similar-texts-recognition с помощью выбранного алгоритма.
 ## Работа с difflib
 ### Для использования difflib необходимо: 
 - Установить difflib
